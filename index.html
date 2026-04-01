@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ergo Fortune Teller — Read the Chain</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="stars" id="stars"></div>
+
+  <main class="container">
+    <header>
+      <div class="sigil">⬡</div>
+      <h1>Ergo Fortune Teller</h1>
+      <p class="subtitle">The blockchain does not lie. Your fate is on-chain.</p>
+    </header>
+
+    <section class="oracle-card">
+      <div class="crystal-ball" id="crystalBall">
+        <div class="orb">
+          <div class="inner-glow"></div>
+          <div class="rune" id="orbRune">⬡</div>
+        </div>
+      </div>
+
+      <div class="chain-stats" id="chainStats">
+        <div class="stat-item">
+          <span class="stat-label">ERG Price</span>
+          <span class="stat-value" id="statPrice">—</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Block Height</span>
+          <span class="stat-value" id="statBlock">—</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Degen Phase</span>
+          <span class="stat-value" id="statPhase">—</span>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <input
+          type="text"
+          id="walletInput"
+          placeholder="Enter Ergo wallet address (optional)"
+          maxlength="51"
+        />
+      </div>
+
+      <button class="btn-read" id="readBtn" onclick="readFortune()">
+        <span class="btn-icon">🔮</span> Read My Fortune
+      </button>
+    </section>
+
+    <section class="fortune-display" id="fortuneDisplay" style="display:none;">
+      <div class="fortune-header">
+        <span class="fortune-icon" id="fortuneIcon">✨</span>
+        <h2 id="fortuneTitle">The Oracle Speaks</h2>
+      </div>
+      <div class="fortune-scroll">
+        <p class="fortune-text" id="fortuneText"></p>
+      </div>
+      <div class="fortune-cards" id="fortuneCards"></div>
+      <div class="fortune-warning" id="fortuneWarning"></div>
+      <button class="btn-again" onclick="resetFortune()">Ask Again</button>
+    </section>
+
+    <footer>
+      <p>Powered by Ergo Explorer &bull; For entertainment purposes only &bull; Not financial advice</p>
+      <p><a href="https://ergoplatform.org" target="_blank">ergoplatform.org</a></p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
