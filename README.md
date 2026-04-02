@@ -1,5 +1,9 @@
 # Ergo Fortune Teller
 
+## Live Demo
+
+**[https://ad-ergo-fortune-teller-1775098093657.vercel.app](https://ad-ergo-fortune-teller-1775098093657.vercel.app)**
+
 A mystical fortune teller powered by live Ergo blockchain data and ERG price feeds.
 
 ## What it does
