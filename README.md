@@ -2,7 +2,7 @@
 
 ## Live Demo
 
-**[https://ad-ergo-fortune-teller-177509802942.vercel.app)**
+**[https://ad-ergo-fortune-teller-177509942836.vercel.app)**
 
 ## What it does
 
